@@ -1,0 +1,7 @@
+C:\Users\maxim\source\repos\RBF\RBF\bin\Debug\RBF.exe.config
+C:\Users\maxim\source\repos\RBF\RBF\bin\Debug\RBF.exe
+C:\Users\maxim\source\repos\RBF\RBF\bin\Debug\RBF.pdb
+C:\Users\maxim\source\repos\RBF\RBF\obj\Debug\RBF.csprojAssemblyReference.cache
+C:\Users\maxim\source\repos\RBF\RBF\obj\Debug\RBF.csproj.CoreCompileInputs.cache
+C:\Users\maxim\source\repos\RBF\RBF\obj\Debug\RBF.exe
+C:\Users\maxim\source\repos\RBF\RBF\obj\Debug\RBF.pdb

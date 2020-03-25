@@ -54365,7 +54365,7 @@ namespace RBF
             get { return _data[x]; }
         }
     }
-
+    //__________________
     [Serializable]
     public class BasicMLSequenceSet : IMLSequenceSet
     {
@@ -55780,6 +55780,7 @@ namespace RBF
             }
         }
     }
+
     public class LinearErrorFunction : IErrorFunction
     {
         /// <inheritdoc/>
@@ -55792,6 +55793,7 @@ namespace RBF
 
         }
     }
+
     public class BufferedNeuralDataSetEnumerator : IEnumerator<IMLDataPair>
     {
         /// <summary>
@@ -58791,8 +58793,6 @@ namespace RBF
         }
     }
 
-    
-
     public class TemporalPoint : IComparable<TemporalPoint>
     {
         /// <summary>
@@ -58892,19 +58892,13 @@ namespace RBF
 
     public class IMLDataError : SyntError
     {
-        /// <summary>
-        /// Construct a message exception.
-        /// </summary>
-        /// <param name="str">The message.</param>
+       
         public IMLDataError(String str)
             : base(str)
         {
         }
 
-        /// <summary>
-        /// Pass on an exception.
-        /// </summary>
-        /// <param name="e">The other exception.</param>
+       
         public IMLDataError(Exception e)
             : base(e)
         {
@@ -61117,8 +61111,6 @@ namespace RBF
         }
     }
 
-  
-
     public class SVMSearchFactory
     {
         /// <summary>
@@ -61808,8 +61800,7 @@ namespace RBF
             }
         }
     }
-
-
+    
     public class TrainBayesianFactory
     {
         /**

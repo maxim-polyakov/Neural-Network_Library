@@ -5,3 +5,10 @@ C:\Users\maxim\Documents\GitHub\RBF\Neural-Network_Library\obj\Debug\Neural-Netw
 C:\Users\maxim\Documents\GitHub\RBF\Neural-Network_Library\obj\Debug\Neural-Network_Library.csproj.CoreCompileInputs.cache
 C:\Users\maxim\Documents\GitHub\RBF\Neural-Network_Library\obj\Debug\Neural-Network_Library.dll
 C:\Users\maxim\Documents\GitHub\RBF\Neural-Network_Library\obj\Debug\Neural-Network_Library.pdb
+D:\GitHub\Neural-Network_Library\Neural-Network_Library\obj\Debug\Neural-Network_Library.csproj.AssemblyReference.cache
+D:\GitHub\Neural-Network_Library\Neural-Network_Library\obj\Debug\Neural-Network_Library.csproj.CoreCompileInputs.cache
+D:\GitHub\Neural-Network_Library\Neural-Network_Library\obj\Debug\Neural-Network_Library.dll
+D:\GitHub\Neural-Network_Library\Neural-Network_Library\obj\Debug\Neural-Network_Library.pdb
+D:\GitHub\Neural-Network_Library\Neural-Network_Library\bin\Debug\Neural-Network_Library.dll.config
+D:\GitHub\Neural-Network_Library\Neural-Network_Library\bin\Debug\Neural-Network_Library.dll
+D:\GitHub\Neural-Network_Library\Neural-Network_Library\bin\Debug\Neural-Network_Library.pdb

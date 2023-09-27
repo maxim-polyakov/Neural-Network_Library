@@ -8,10 +8,11 @@
     <OutputType>Library</OutputType>
     <RootNamespace>RBF</RootNamespace>
     <AssemblyName>Neural-Network_Library</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,11 +48,150 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Neural-Network_Library.cs" />
+    <Compile Include="AbstractClasses\AbstractPNN.cs" />
+    <Compile Include="AbstractClasses\BasicExtract.cs" />
+    <Compile Include="AbstractClasses\BasicGAlgorithm.cs" />
+    <Compile Include="AbstractClasses\BasicGene.cs" />
+    <Compile Include="AbstractClasses\BasicHessian.cs" />
+    <Compile Include="AbstractClasses\BasicML.cs" />
+    <Compile Include="AbstractClasses\BasicOutputField.cs" />
+    <Compile Include="AbstractClasses\BasicOutputFieldGroup.cs" />
+    <Compile Include="AbstractClasses\BasicQuery.cs" />
+    <Compile Include="AbstractClasses\BasicRandomizer.cs" />
+    <Compile Include="AbstractClasses\BasicRBF.cs" />
+    <Compile Include="AbstractClasses\BasicT.cs" />
+    <Compile Include="AbstractClasses\BasicTraining.cs" />
+    <Compile Include="AbstractClasses\ConcurrentJob.cs" />
+    <Compile Include="AbstractClasses\CrossTraining.cs" />
+    <Compile Include="AbstractClasses\ErrorCalculation.cs" />
+    <Compile Include="AbstractClasses\FormElement.cs" />
+    <Compile Include="AbstractClasses\GAlgorithm.cs" />
+    <Compile Include="AbstractClasses\IndexSegregator.cs" />
+    <Compile Include="AbstractClasses\MLTrainFactory.cs" />
+    <Compile Include="AbstractClasses\OutputFieldGrouped.cs" />
+    <Compile Include="AbstractClasses\Propagation.cs" />
+    <Compile Include="AbstractClasses\SimulatedAnnealing.cs" />
+    <Compile Include="AbstractClasses\ThermalNetwork.cs" />
+    <Compile Include="Classes\BoundMath.cs" />
+    <Compile Include="Classes\BoundNumbers.cs" />
+    <Compile Include="Classes\ComplexNumber.cs" />
+    <Compile Include="Classes\ConsistentRandomizer.cs" />
+    <Compile Include="Classes\Convert.cs" />
+    <Compile Include="Classes\Equilateral.cs" />
+    <Compile Include="Classes\FlatNetwork.cs" />
+    <Compile Include="Classes\FlatNetworkRBF.cs" />
+    <Compile Include="Classes\GaussianFunction.cs" />
+    <Compile Include="Classes\IntRange.cs" />
+    <Compile Include="Classes\InverseMultiquadricFunction.cs" />
+    <Compile Include="Classes\LinearCongruentialGenerator.cs" />
+    <Compile Include="Classes\MathConst.cs" />
+    <Compile Include="Classes\MexicanHatFunction.cs" />
+    <Compile Include="Classes\MultiquadricFunction.cs" />
+    <Compile Include="Classes\Neural-Network_Library.cs" />
+    <Compile Include="Classes\NumericRange.cs" />
+    <Compile Include="Classes\RBFNetwork.cs" />
+    <Compile Include="Classes\SyntMath.cs" />
+    <Compile Include="Classes\ThreadSafeRandom.cs" />
+    <Compile Include="Classes\TrainBasicPNN.cs" />
+    <Compile Include="Classes\VectorAlgebra.cs" />
+    <Compile Include="Enums\BayesianInit.cs" />
+    <Compile Include="Enums\ErrorCalculationMode.cs" />
+    <Compile Include="Enums\EventType.cs" />
+    <Compile Include="Enums\KernelType.cs" />
+    <Compile Include="Enums\MarketDataType.cs" />
+    <Compile Include="Enums\NetworkPattern.cs" />
+    <Compile Include="Enums\NormalizationAction.cs" />
+    <Compile Include="Enums\PNNKernelType.cs" />
+    <Compile Include="Enums\PNNOutputMode.cs" />
+    <Compile Include="Enums\RBFEnum.cs" />
+    <Compile Include="Enums\RPROPType.cs" />
+    <Compile Include="Enums\SVMType.cs" />
+    <Compile Include="Enums\TemporalType.cs" />
+    <Compile Include="Enums\TimeUnit.cs" />
+    <Compile Include="Enums\TrainingImplementationType.cs" />
+    <Compile Include="Enums\YInnovationType.cs" />
+    <Compile Include="Enums\YNeuronType.cs" />
+    <Compile Include="Enums\YParent.cs" />
+    <Compile Include="Interfaces\IActivationFunction.cs" />
+    <Compile Include="Interfaces\IBayesEstimator.cs" />
+    <Compile Include="Interfaces\IBayesianQuery.cs" />
+    <Compile Include="Interfaces\IBayesSearch.cs" />
+    <Compile Include="Interfaces\ICalculateScore.cs" />
+    <Compile Include="Interfaces\ICalculateTScore.cs" />
+    <Compile Include="Interfaces\ICalculationCriteria.cs" />
+    <Compile Include="Interfaces\ICentroid.cs" />
+    <Compile Include="Interfaces\ICentroidFactory.cs" />
+    <Compile Include="Interfaces\IComputeHessian.cs" />
+    <Compile Include="Interfaces\IContainsFlat.cs" />
+    <Compile Include="Interfaces\ICrossover.cs" />
+    <Compile Include="Interfaces\IDataSetCODEC.cs" />
+    <Compile Include="Interfaces\IDownSample.cs" />
+    <Compile Include="Interfaces\IEndTrainingStrategy.cs" />
+    <Compile Include="Interfaces\IEngineTask.cs" />
+    <Compile Include="Interfaces\IErrorFunction.cs" />
+    <Compile Include="Interfaces\IExtract.cs" />
+    <Compile Include="Interfaces\IExtractListener.cs" />
+    <Compile Include="Interfaces\IGene.cs" />
+    <Compile Include="Interfaces\IGenerateID.cs" />
+    <Compile Include="Interfaces\IHasFixedLength.cs" />
+    <Compile Include="Interfaces\IInnovation.cs" />
+    <Compile Include="Interfaces\IInnovationList.cs" />
+    <Compile Include="Interfaces\IInputField.cs" />
+    <Compile Include="Interfaces\ILayer.cs" />
+    <Compile Include="Interfaces\ILearningRate.cs" />
+    <Compile Include="Interfaces\IMarketLoader.cs" />
+    <Compile Include="Interfaces\IMLAutoAssocation.cs" />
+    <Compile Include="Interfaces\IMLClassification.cs" />
+    <Compile Include="Interfaces\IMLCluster.cs" />
+    <Compile Include="Interfaces\IMLClustering.cs" />
+    <Compile Include="Interfaces\IMLComplexData.cs" />
+    <Compile Include="Interfaces\IMLContext.cs" />
+    <Compile Include="Interfaces\IMLData.cs" />
+    <Compile Include="Interfaces\IMLDataPair.cs" />
+    <Compile Include="Interfaces\IMLDataSet.cs" />
+    <Compile Include="Interfaces\IMLEncodable.cs" />
+    <Compile Include="Interfaces\IMLError.cs" />
+    <Compile Include="Interfaces\IMLInput.cs" />
+    <Compile Include="Interfaces\IMLInputOutput.cs" />
+    <Compile Include="Interfaces\IMLMethod.cs" />
+    <Compile Include="Interfaces\IMLOutput.cs" />
+    <Compile Include="Interfaces\IMLProperties.cs" />
+    <Compile Include="Interfaces\IMLRegression.cs" />
+    <Compile Include="Interfaces\IMLResettable.cs" />
+    <Compile Include="Interfaces\IMLSequenceSet.cs" />
+    <Compile Include="Interfaces\IMLStateSequence.cs" />
+    <Compile Include="Interfaces\IMLTrain.cs" />
+    <Compile Include="Interfaces\IMomentum.cs" />
+    <Compile Include="Interfaces\IMultiThreadable.cs" />
+    <Compile Include="Interfaces\IMutate.cs" />
+    <Compile Include="Interfaces\INeighborhoodFunction.cs" />
+    <Compile Include="Interfaces\INeuralData.cs" />
+    <Compile Include="Interfaces\INeuralDataSet.cs" />
+    <Compile Include="Interfaces\INeuralNetworkPattern.cs" />
+    <Compile Include="Interfaces\INormalizationStorage.cs" />
+    <Compile Include="Interfaces\IOutputField.cs" />
+    <Compile Include="Interfaces\IOutputFieldGroup.cs" />
+    <Compile Include="Interfaces\IPersistor.cs" />
+    <Compile Include="Interfaces\IPopulation.cs" />
+    <Compile Include="Interfaces\IRadialBasisFunction.cs" />
+    <Compile Include="Interfaces\IRandomizer.cs" />
+    <Compile Include="Interfaces\IRequireTwoPass.cs" />
+    <Compile Include="Interfaces\ISegregator.cs" />
+    <Compile Include="Interfaces\ISpecies.cs" />
+    <Compile Include="Interfaces\IStatusReportable.cs" />
+    <Compile Include="Interfaces\IStrategy.cs" />
+    <Compile Include="Interfaces\ISyntPersistor.cs" />
+    <Compile Include="Interfaces\ISyntPluginLogging1.cs" />
+    <Compile Include="Interfaces\ISyntPluginService1.cs" />
+    <Compile Include="Interfaces\IT.cs" />
+    <Compile Include="Interfaces\ITimeUnitNames.cs" />
+    <Compile Include="Interfaces\ITrain.cs" />
+    <Compile Include="Interfaces\SyntPluginBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -125,6 +125,7 @@
     <Compile Include="Classes\NeuralT.cs" />
     <Compile Include="Classes\NguyenWidrowRandomizer.cs" />
     <Compile Include="Classes\NumericRange.cs" />
+    <Compile Include="Classes\PersistTrainingContinuation.cs" />
     <Compile Include="Classes\QRDecomposition.cs" />
     <Compile Include="Classes\QuickPropagation.cs" />
     <Compile Include="Classes\RangeRandomizer.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Classes\SyntMath.cs" />
     <Compile Include="Classes\ThreadSafeRandom.cs" />
     <Compile Include="Classes\TrainBasicPNN.cs" />
+    <Compile Include="Classes\TrainingContinuation.cs" />
     <Compile Include="Classes\VectorAlgebra.cs" />
     <Compile Include="Enums\BayesianInit.cs" />
     <Compile Include="Enums\ErrorCalculationMode.cs" />

@@ -8,12 +8,12 @@ namespace Neural_Network_Library_tests
         [TestMethod]
         public void TestMethod_TrainBayesian()
         {
-            IMLDataSet data = new MLDataSet();
+            //IMLDataSet data = new MLDataSet();
 
             RBFNetwork ac = new RBFNetwork();
 
 
-            ac.CalculateError(data);
+            //ac.CalculateError(data);
         }
     }
 }

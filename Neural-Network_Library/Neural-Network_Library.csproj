@@ -119,6 +119,8 @@
     <Compile Include="Classes\NetworkFold.cs" />
     <Compile Include="Classes\Neural-Network_Library.cs" />
     <Compile Include="Classes\NeuralGAlgorithm.cs" />
+    <Compile Include="Classes\NeuralPSO.cs" />
+    <Compile Include="Classes\NeuralPSOWorker.cs" />
     <Compile Include="Classes\NeuralSimulatedAnnealing.cs" />
     <Compile Include="Classes\NeuralSimulatedAnnealingHelper.cs" />
     <Compile Include="Classes\NeuralStructure.cs" />
@@ -134,11 +136,15 @@
     <Compile Include="Classes\RPROPConst.cs" />
     <Compile Include="Classes\ScaledConjugateGradient.cs" />
     <Compile Include="Classes\SingularValueDecomposition.cs" />
+    <Compile Include="Classes\SmartLearningRate.cs" />
+    <Compile Include="Classes\SmartMomentum.cs" />
     <Compile Include="Classes\Splice.cs" />
     <Compile Include="Classes\SyntMath.cs" />
     <Compile Include="Classes\ThreadSafeRandom.cs" />
+    <Compile Include="Classes\TrainAdaline.cs" />
     <Compile Include="Classes\TrainBasicPNN.cs" />
     <Compile Include="Classes\TrainingContinuation.cs" />
+    <Compile Include="Classes\TrainingError.cs" />
     <Compile Include="Classes\VectorAlgebra.cs" />
     <Compile Include="Enums\BayesianInit.cs" />
     <Compile Include="Enums\ErrorCalculationMode.cs" />

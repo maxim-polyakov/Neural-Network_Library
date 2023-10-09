@@ -72,12 +72,17 @@
     <Compile Include="AbstractClasses\Propagation.cs" />
     <Compile Include="AbstractClasses\SimulatedAnnealing.cs" />
     <Compile Include="AbstractClasses\ThermalNetwork.cs" />
+    <Compile Include="Classes\ADALINEPattern.cs" />
     <Compile Include="Classes\AnalyzeNetwork.cs" />
+    <Compile Include="Classes\ART1Pattern.cs" />
     <Compile Include="Classes\Backpropagation.cs" />
+    <Compile Include="Classes\BAMNetwork.cs" />
+    <Compile Include="Classes\BAMPattern.cs" />
     <Compile Include="Classes\BasicLayer.cs" />
     <Compile Include="Classes\BasicNetwork.cs" />
     <Compile Include="Classes\BasicPopulation.cs" />
     <Compile Include="Classes\BiPolarUtil.cs" />
+    <Compile Include="Classes\BoltzmannPattern.cs" />
     <Compile Include="Classes\BoundMath.cs" />
     <Compile Include="Classes\BoundNumbers.cs" />
     <Compile Include="Classes\ChainRuleWorker.cs" />
@@ -86,10 +91,13 @@
     <Compile Include="Classes\ConsistentRandomizer.cs" />
     <Compile Include="Classes\ConstRandomizer.cs" />
     <Compile Include="Classes\Convert.cs" />
+    <Compile Include="Classes\CPNNetwork.cs" />
+    <Compile Include="Classes\CPNPattern.cs" />
     <Compile Include="Classes\DeriveMinimum.cs" />
     <Compile Include="Classes\Distort.cs" />
     <Compile Include="Classes\DoubleGene.cs" />
     <Compile Include="Classes\EigenvalueDecomposition.cs" />
+    <Compile Include="Classes\ElmanPattern.cs" />
     <Compile Include="Classes\Equilateral.cs" />
     <Compile Include="Classes\FanInRandomizer.cs" />
     <Compile Include="Classes\FlatNetwork.cs" />
@@ -118,6 +126,7 @@
     <Compile Include="Classes\NetworkCODEC.cs" />
     <Compile Include="Classes\NetworkFold.cs" />
     <Compile Include="Classes\Neural-Network_Library.cs" />
+    <Compile Include="Classes\NeuralDataMapping.cs" />
     <Compile Include="Classes\NeuralGAlgorithm.cs" />
     <Compile Include="Classes\NeuralPSO.cs" />
     <Compile Include="Classes\NeuralPSOWorker.cs" />
@@ -127,6 +136,7 @@
     <Compile Include="Classes\NeuralT.cs" />
     <Compile Include="Classes\NguyenWidrowRandomizer.cs" />
     <Compile Include="Classes\NumericRange.cs" />
+    <Compile Include="Classes\PersistBasicNetwork.cs" />
     <Compile Include="Classes\PersistTrainingContinuation.cs" />
     <Compile Include="Classes\QRDecomposition.cs" />
     <Compile Include="Classes\QuickPropagation.cs" />
@@ -145,6 +155,7 @@
     <Compile Include="Classes\TrainBasicPNN.cs" />
     <Compile Include="Classes\TrainingContinuation.cs" />
     <Compile Include="Classes\TrainingError.cs" />
+    <Compile Include="Classes\TrainingSetScore.cs" />
     <Compile Include="Classes\VectorAlgebra.cs" />
     <Compile Include="Enums\BayesianInit.cs" />
     <Compile Include="Enums\ErrorCalculationMode.cs" />

@@ -67,6 +67,7 @@
     <Compile Include="AbstractClasses\FormElement.cs" />
     <Compile Include="AbstractClasses\GAlgorithm.cs" />
     <Compile Include="AbstractClasses\IndexSegregator.cs" />
+    <Compile Include="AbstractClasses\Kernel.cs" />
     <Compile Include="AbstractClasses\MLTrainFactory.cs" />
     <Compile Include="AbstractClasses\OutputFieldGrouped.cs" />
     <Compile Include="AbstractClasses\Propagation.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Classes\BoltzmannPattern.cs" />
     <Compile Include="Classes\BoundMath.cs" />
     <Compile Include="Classes\BoundNumbers.cs" />
+    <Compile Include="Classes\Cache.cs" />
     <Compile Include="Classes\ChainRuleWorker.cs" />
     <Compile Include="Classes\CholeskyDecomposition.cs" />
     <Compile Include="Classes\ComplexNumber.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Classes\ElmanPattern.cs" />
     <Compile Include="Classes\Equilateral.cs" />
     <Compile Include="Classes\FanInRandomizer.cs" />
+    <Compile Include="Classes\FeedForwardPattern.cs" />
     <Compile Include="Classes\FlatNetwork.cs" />
     <Compile Include="Classes\FlatNetworkRBF.cs" />
     <Compile Include="Classes\GaussianFunction.cs" />
@@ -109,8 +112,10 @@
     <Compile Include="Classes\GScoreAdapter.cs" />
     <Compile Include="Classes\HessianCR.cs" />
     <Compile Include="Classes\HessianFD.cs" />
+    <Compile Include="Classes\HopfieldPattern.cs" />
     <Compile Include="Classes\IntRange.cs" />
     <Compile Include="Classes\InverseMultiquadricFunction.cs" />
+    <Compile Include="Classes\JordanPattern.cs" />
     <Compile Include="Classes\LevenbergMarquardtTraining.cs" />
     <Compile Include="Classes\LinearCongruentialGenerator.cs" />
     <Compile Include="Classes\LUDecomposition.cs" />
@@ -136,10 +141,13 @@
     <Compile Include="Classes\NeuralT.cs" />
     <Compile Include="Classes\NguyenWidrowRandomizer.cs" />
     <Compile Include="Classes\NumericRange.cs" />
+    <Compile Include="Classes\PatternError.cs" />
     <Compile Include="Classes\PersistBasicNetwork.cs" />
     <Compile Include="Classes\PersistTrainingContinuation.cs" />
+    <Compile Include="Classes\PNNPattern.cs" />
     <Compile Include="Classes\QRDecomposition.cs" />
     <Compile Include="Classes\QuickPropagation.cs" />
+    <Compile Include="Classes\RadialBasisPattern.cs" />
     <Compile Include="Classes\RangeRandomizer.cs" />
     <Compile Include="Classes\RBFNetwork.cs" />
     <Compile Include="Classes\ResilientPropagation.cs" />
@@ -148,6 +156,7 @@
     <Compile Include="Classes\SingularValueDecomposition.cs" />
     <Compile Include="Classes\SmartLearningRate.cs" />
     <Compile Include="Classes\SmartMomentum.cs" />
+    <Compile Include="Classes\SOMPattern.cs" />
     <Compile Include="Classes\Splice.cs" />
     <Compile Include="Classes\SyntMath.cs" />
     <Compile Include="Classes\ThreadSafeRandom.cs" />

@@ -141,6 +141,7 @@
     <Compile Include="Classes\NeuralT.cs" />
     <Compile Include="Classes\NguyenWidrowRandomizer.cs" />
     <Compile Include="Classes\NumericRange.cs" />
+    <Compile Include="Classes\ONE_CLASS_Q.cs" />
     <Compile Include="Classes\PatternError.cs" />
     <Compile Include="Classes\PersistBasicNetwork.cs" />
     <Compile Include="Classes\PersistTrainingContinuation.cs" />
@@ -156,8 +157,17 @@
     <Compile Include="Classes\SingularValueDecomposition.cs" />
     <Compile Include="Classes\SmartLearningRate.cs" />
     <Compile Include="Classes\SmartMomentum.cs" />
+    <Compile Include="Classes\Solver.cs" />
+    <Compile Include="Classes\Solver_NU.cs" />
     <Compile Include="Classes\SOMPattern.cs" />
     <Compile Include="Classes\Splice.cs" />
+    <Compile Include="Classes\SupportVectorMachine.cs" />
+    <Compile Include="Classes\SVC_Q.cs" />
+    <Compile Include="Classes\svm.cs" />
+    <Compile Include="Classes\SVMPattern.cs" />
+    <Compile Include="Classes\svm_model.cs" />
+    <Compile Include="Classes\svm_parameter.cs" />
+    <Compile Include="Classes\SVR_Q.cs" />
     <Compile Include="Classes\SyntMath.cs" />
     <Compile Include="Classes\ThreadSafeRandom.cs" />
     <Compile Include="Classes\TrainAdaline.cs" />

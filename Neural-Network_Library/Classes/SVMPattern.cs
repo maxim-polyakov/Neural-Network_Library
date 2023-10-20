@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RBF.Classes
+namespace Neural_Network_Library
 {
     public class SVMPattern : INeuralNetworkPattern
     {

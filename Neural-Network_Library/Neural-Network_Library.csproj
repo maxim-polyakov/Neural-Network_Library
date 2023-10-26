@@ -119,6 +119,7 @@
     <Compile Include="Classes\HessianCR.cs" />
     <Compile Include="Classes\HessianFD.cs" />
     <Compile Include="Classes\HiddenLayerParams.cs" />
+    <Compile Include="Classes\HopfieldNetwork.cs" />
     <Compile Include="Classes\HopfieldPattern.cs" />
     <Compile Include="Classes\IntRange.cs" />
     <Compile Include="Classes\InverseMultiquadricFunction.cs" />
@@ -144,6 +145,7 @@
     <Compile Include="Classes\Neural-Network_Library.cs" />
     <Compile Include="Classes\NeuralDataMapping.cs" />
     <Compile Include="Classes\NeuralGAlgorithm.cs" />
+    <Compile Include="Classes\NeuralNetworkError.cs" />
     <Compile Include="Classes\NeuralPSO.cs" />
     <Compile Include="Classes\NeuralPSOWorker.cs" />
     <Compile Include="Classes\NeuralSimulatedAnnealing.cs" />
@@ -153,9 +155,12 @@
     <Compile Include="Classes\NguyenWidrowRandomizer.cs" />
     <Compile Include="Classes\NumericRange.cs" />
     <Compile Include="Classes\ONE_CLASS_Q.cs" />
+    <Compile Include="Classes\ParseError.cs" />
     <Compile Include="Classes\PatternError.cs" />
     <Compile Include="Classes\PersistBasicNetwork.cs" />
     <Compile Include="Classes\PersistBasicPNN.cs" />
+    <Compile Include="Classes\PersistBoltzmann.cs" />
+    <Compile Include="Classes\PersistHopfield.cs" />
     <Compile Include="Classes\PersistRBFNetwork.cs" />
     <Compile Include="Classes\PersistSOM.cs" />
     <Compile Include="Classes\PersistTrainingContinuation.cs" />
@@ -167,6 +172,9 @@
     <Compile Include="Classes\RadialBasisPattern.cs" />
     <Compile Include="Classes\RangeRandomizer.cs" />
     <Compile Include="Classes\RBFNetwork.cs" />
+    <Compile Include="Classes\ReadHTML.cs" />
+    <Compile Include="Classes\ReadTags.cs" />
+    <Compile Include="Classes\ReadXML.cs" />
     <Compile Include="Classes\ResilientPropagation.cs" />
     <Compile Include="Classes\RPROPConst.cs" />
     <Compile Include="Classes\ScaledConjugateGradient.cs" />
@@ -190,6 +198,8 @@
     <Compile Include="Classes\svm_parameter.cs" />
     <Compile Include="Classes\SVR_Q.cs" />
     <Compile Include="Classes\SyntMath.cs" />
+    <Compile Include="Classes\Tag.cs" />
+    <Compile Include="Classes\TagConst.cs" />
     <Compile Include="Classes\ThreadSafeRandom.cs" />
     <Compile Include="Classes\TrainAdaline.cs" />
     <Compile Include="Classes\TrainBasicPNN.cs" />
@@ -197,6 +207,8 @@
     <Compile Include="Classes\TrainingError.cs" />
     <Compile Include="Classes\TrainingSetScore.cs" />
     <Compile Include="Classes\VectorAlgebra.cs" />
+    <Compile Include="Classes\WriteTags.cs" />
+    <Compile Include="Classes\WriteXML.cs" />
     <Compile Include="Enums\BayesianInit.cs" />
     <Compile Include="Enums\ErrorCalculationMode.cs" />
     <Compile Include="Enums\EventType.cs" />

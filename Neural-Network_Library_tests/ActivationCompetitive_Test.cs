@@ -10,7 +10,7 @@ namespace Neural_Network_Library_tests
     [TestClass]
     public class ActivationCompetitive_Test
     {
-        private IActivationFunction ac = new ActivationCompetitive();
+        private IActivationFunction _activationFunction = new ActivationCompetitive();
 
         [TestMethod]
         public void TestMethod_ActivationFunction()
@@ -23,7 +23,7 @@ namespace Neural_Network_Library_tests
                 x[i] = i;
             }
             
-            this.ac.ActivationFunction(x, start, size);
+            this._activationFunction.ActivationFunction(x, start, size);
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace Neural_Network_Library_tests
             double b = 1.0;
 
             
-            var res = ac.DerivativeFunction(a, b);
+            var res = _activationFunction.DerivativeFunction(a, b);
         }
     }
 }

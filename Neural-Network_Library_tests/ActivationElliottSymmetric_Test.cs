@@ -11,7 +11,7 @@ namespace Neural_Network_Library_tests
     public class ActivationElliottSymmetric_Test
     {
 
-        private IActivationFunction aes = new ActivationElliottSymmetric();
+        private IActivationFunction _activationFunction = new ActivationElliottSymmetric();
 
         [TestMethod]
         public void TestMethod_DerivativeFunction() {
@@ -24,30 +24,27 @@ namespace Neural_Network_Library_tests
 
             int start = 0, size = 10;
 
-            this.aes.ActivationFunction(d, start, size);
+            this._activationFunction.ActivationFunction(d, start, size);
         }
 
         [TestMethod]
         public void TestMethod_DerivationFunction() {
             double b = 2.0, a = 1.0;
 
-            double res = this.aes.DerivativeFunction(b , a);
+            double res = this._activationFunction.DerivativeFunction(b , a);
 
             Assert.AreEqual(res, 0.1111111111111111);
         }
 
         [TestMethod]
         public void HasDerivative_Test() {
-
-            bool res = this.aes.HasDerivative();
-
-            Assert.AreEqual(res, true);
+            Assert.AreEqual(this._activationFunction.HasDerivative(), true);
         }
 
         [TestMethod]
         public void SetParam_Test() {
 
-            this.aes.Clone();
+            this._activationFunction.Clone();
         }
     }
 }

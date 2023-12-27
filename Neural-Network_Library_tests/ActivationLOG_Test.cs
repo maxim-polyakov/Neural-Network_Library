@@ -10,11 +10,11 @@ namespace Neural_Network_Library_tests
     [TestClass]
     public class ActivationLOG_Test
     {
-        private IActivationFunction al = new ActivationLOG();
+        private IActivationFunction _activationFunction = new ActivationLOG();
 
         [TestMethod]
         public void Clone_Test() {
-            this.al.Clone();
+            this._activationFunction.Clone();
         }
 
         [TestMethod]
@@ -22,17 +22,17 @@ namespace Neural_Network_Library_tests
             double b = 2.0;
             double a = 3.0;
 
-            al.DerivativeFunction(b, a);
+            _activationFunction.DerivativeFunction(b, a);
         }
 
         [TestMethod]
         public void ActivationFunction_Test() {
-            this.al.Clone();
+            this._activationFunction.Clone();
         }
 
         [TestMethod]
         public void HasDerivative_Test() {
-
+            Assert.AreEqual(true, _activationFunction.HasDerivative());
         }
     }
 }

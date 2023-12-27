@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Neural_Network_Library_tests
 {
     [TestClass]
-    public class ActivationTANH_Test
-    {
+    public class ActivationTANH_Test {
+
     }
 }

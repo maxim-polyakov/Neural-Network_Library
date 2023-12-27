@@ -11,7 +11,7 @@ namespace Neural_Network_Library_tests
     public class ActivationBiPolar_Test
     {
 
-        private IActivationFunction ab = new ActivationBiPolar();
+        private IActivationFunction _activationFunction = new ActivationBiPolar();
 
 
         [TestMethod]
@@ -20,7 +20,7 @@ namespace Neural_Network_Library_tests
             double a = 5.0;
             double b = 1.0;
 
-            var res = this.ab.DerivativeFunction(a, b);
+            var res = this._activationFunction.DerivativeFunction(a, b);
 
             Assert.AreEqual(1, res);
         }
@@ -29,7 +29,7 @@ namespace Neural_Network_Library_tests
         public void TestMethod_HasDerivative()
         {
             
-            var res = this.ab.HasDerivative();
+            var res = this._activationFunction.HasDerivative();
 
             Assert.AreEqual(true, res);
         }
@@ -45,7 +45,7 @@ namespace Neural_Network_Library_tests
                 x[i] = i;
             }    
             
-            this.ab.ActivationFunction(x, start, size);
+            this._activationFunction.ActivationFunction(x, start, size);
         }
 
     }

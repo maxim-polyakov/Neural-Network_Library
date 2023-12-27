@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Neural_Network_Library
 {
+
     [Serializable]
     public class ActivationCompetitive : IActivationFunction
     {

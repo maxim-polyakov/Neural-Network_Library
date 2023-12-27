@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Neural_Network_Library_tests
 {
     [TestClass]
-    public class Address_Test
-    {
+    public class Address_Test {
+
     }
 }

@@ -8,32 +8,23 @@ using System.Threading.Tasks;
 namespace Neural_Network_Library_tests
 {
     [TestClass]
-    public class ActivationLinear_Test
-    {
-        private IActivationFunction al = new ActivationLinear();
+    public class ActivationLinear_Test {
+        private IActivationFunction _activationFunction = new ActivationLinear();
 
         [TestMethod]
-        public void HasDerivative_Test()
-        {
-
-            bool res = this.al.HasDerivative();
-
-            Assert.AreEqual(res, true);
+        public void HasDerivative_Test() {
+            Assert.AreEqual(this._activationFunction.HasDerivative(), true);
         }
 
         [TestMethod]
-        public void TestMethod_DerivationFunction()
-        {
+        public void TestMethod_DerivationFunction() {
             double b = 2.0, a = 1.0;
 
-            double res = this.al.DerivativeFunction(b, a);
-
-            Assert.AreEqual(res, 1);
+            Assert.AreEqual(this._activationFunction.DerivativeFunction(b, a), 1);
         }
 
         [TestMethod]
-        public void TestMethod_ActivationFunction()
-        {
+        public void TestMethod_ActivationFunction() {
             double[] d = new double[10];
 
             for (int i = 0; i < 10; i++)
@@ -43,13 +34,12 @@ namespace Neural_Network_Library_tests
             int start = 10;
             int size = 10;
 
-            this.al.ActivationFunction(d, start, size);
+            this._activationFunction.ActivationFunction(d, start, size);
         }
 
-        //[TestMethod]
-        //public object Clone()
-        //{
-            //return new ActivationLinear();
-        //}
+        [TestMethod]
+        public void Clone_Test() {
+            _activationFunction.Clone();
+        }
     }
 }

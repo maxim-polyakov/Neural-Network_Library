@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Neural_Network_Library_tests
 {
     [TestClass]
-    public class ArchitectureParse_Test
-    {
+    public class ArchitectureParse_Test {
     }
 }

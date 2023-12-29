@@ -9,6 +9,12 @@ namespace Neural_Network_Library_tests
 {
     [TestClass]
     public class ADALINEPattern_Test {
-        INeuralNetworkPattern _activationFunction = new ADALINEPattern();
+
+        private INeuralNetworkPattern _activationFunction = new ADALINEPattern();
+
+        [TestMethod]
+        public void ActivationFunction_Test()
+        {
+        }
     }
 }

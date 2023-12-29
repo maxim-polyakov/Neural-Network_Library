@@ -14,7 +14,7 @@ namespace Neural_Network_Library_tests
         private IActivationFunction _activationFunction = new ActivationElliottSymmetric();
 
         [TestMethod]
-        public void TestMethod_DerivativeFunction() {
+        public void TestMethod_ActivationFunction() {
             double[] d = new double[10];
 
             for(int i = 0; i < 10; i++) 
@@ -42,7 +42,7 @@ namespace Neural_Network_Library_tests
         }
 
         [TestMethod]
-        public void SetParam_Test() {
+        public void Clone_Test() {
 
             this._activationFunction.Clone();
         }

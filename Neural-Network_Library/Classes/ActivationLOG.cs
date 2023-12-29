@@ -33,7 +33,6 @@ namespace Neural_Network_Library
             return new ActivationLOG();
         }
 
-
         /// <returns>Return true, log has a derivative.</returns>
         public virtual bool HasDerivative()
         {
@@ -56,7 +55,6 @@ namespace Neural_Network_Library
                 }
             }
         }
-
         /// <inheritdoc />
         public virtual double DerivativeFunction(double b, double a)
         {
@@ -76,7 +74,6 @@ namespace Neural_Network_Library
                 return result;
             }
         }
-
 
         /// <inheritdoc />
         public virtual double[] Params

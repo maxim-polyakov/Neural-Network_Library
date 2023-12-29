@@ -13,8 +13,17 @@ namespace Neural_Network_Library_tests
         private IActivationFunction _activationFunction = new ActivationLOG();
 
         [TestMethod]
-        public void Clone_Test() {
-            this._activationFunction.Clone();
+        public void ActivationFunction_Test() {
+            double[] d = new double[10];
+
+            for (int i = 0; i < 10; i++)
+            {
+                d[i] = i;
+            }
+            int start = 10;
+            int size = 10;
+
+            this._activationFunction.ActivationFunction(d, start, size);
         }
 
         [TestMethod]
@@ -26,13 +35,13 @@ namespace Neural_Network_Library_tests
         }
 
         [TestMethod]
-        public void ActivationFunction_Test() {
-            this._activationFunction.Clone();
+        public void HasDerivative_Test() {
+            Assert.AreEqual(true, _activationFunction.HasDerivative());
         }
 
         [TestMethod]
-        public void HasDerivative_Test() {
-            Assert.AreEqual(true, _activationFunction.HasDerivative());
+        public void Clone_Test() {
+            this._activationFunction.Clone();
         }
     }
 }

@@ -14,31 +14,26 @@ namespace Neural_Network_Library
         /// </summary>
         ///
         public const int ParamRampHighThreshold = 0;
-
         /// <summary>
         /// The ramp low threshold parameter.
         /// </summary>
         ///
         public const int ParamRampLowThreshold = 1;
-
         /// <summary>
         /// The ramp high parameter.
         /// </summary>
         ///
         public const int ParamRampHigh = 2;
-
         /// <summary>
         /// The ramp low parameter.
         /// </summary>
         ///
         public const int ParamRampLow = 3;
-
         /// <summary>
         /// The parameters.
         /// </summary>
         ///
         private readonly double[] _paras;
-
         /// <summary>
         /// Construct a ramp activation function.
         /// </summary>
@@ -56,7 +51,6 @@ namespace Neural_Network_Library
             _paras[ParamRampHigh] = high;
             _paras[ParamRampLow] = low;
         }
-
         /// <summary>
         /// Default constructor.
         /// </summary>
@@ -65,8 +59,6 @@ namespace Neural_Network_Library
             : this(1, 0, 1, 0)
         {
         }
-
-
         /// <summary>
         /// Clone the object.
         /// </summary>
@@ -79,8 +71,6 @@ namespace Neural_Network_Library
                 _paras[ParamRampHigh],
                 _paras[ParamRampLow]);
         }
-
-
         /// <summary>
         /// The high value.
         /// </summary>
@@ -89,8 +79,6 @@ namespace Neural_Network_Library
             get { return _paras[ParamRampHigh]; }
             set { _paras[ParamRampHigh] = value; }
         }
-
-
         /// <summary>
         /// The low value.
         /// </summary>
@@ -99,8 +87,6 @@ namespace Neural_Network_Library
             get { return _paras[ParamRampLow]; }
             set { _paras[ParamRampLow] = value; }
         }
-
-
         /// <summary>
         /// Set the threshold high.
         /// </summary>
@@ -109,8 +95,6 @@ namespace Neural_Network_Library
             get { return _paras[ParamRampHighThreshold]; }
             set { _paras[ParamRampHighThreshold] = value; }
         }
-
-
         /// <summary>
         /// The threshold low.
         /// </summary>
@@ -119,8 +103,6 @@ namespace Neural_Network_Library
             get { return _paras[ParamRampLowThreshold]; }
             set { _paras[ParamRampLowThreshold] = value; }
         }
-
-
         /// <summary>
         /// True, as this function does have a derivative.
         /// </summary>
@@ -129,7 +111,6 @@ namespace Neural_Network_Library
         {
             return true;
         }
-
         /// <inheritdoc />
         public virtual void ActivationFunction(double[] x, int start,
                                                int size)
@@ -153,13 +134,11 @@ namespace Neural_Network_Library
                 }
             }
         }
-
         /// <inheritdoc />
         public virtual double DerivativeFunction(double b, double a)
         {
             return 1.0d;
         }
-
         /// <inheritdoc />
         public virtual String[] ParamNames
         {
@@ -172,8 +151,6 @@ namespace Neural_Network_Library
                 return result;
             }
         }
-
-
         /// <inheritdoc />
         public virtual double[] Params
         {

@@ -10,6 +10,6 @@ namespace Neural_Network_Library_tests
     [TestClass]
     public class Address_Test {
 
-        Address _adress = new Address();
+        //private Address _adress = new Address();
     }
 }

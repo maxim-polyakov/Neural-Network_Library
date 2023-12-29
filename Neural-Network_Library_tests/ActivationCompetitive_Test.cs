@@ -35,5 +35,18 @@ namespace Neural_Network_Library_tests
             
             var res = _activationFunction.DerivativeFunction(a, b);
         }
+
+        [TestMethod]
+        public void TestMethod_HasDerivative()
+        {
+            Assert.AreEqual(true, this._activationFunction.HasDerivative(););
+        }
+
+        [TestMethod]
+        public void Clone_Test()
+        {
+
+            this._activationFunction.Clone();
+        }
     }
 }

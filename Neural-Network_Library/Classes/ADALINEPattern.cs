@@ -73,7 +73,6 @@ namespace Neural_Network_Library
             }
         }
 
-
         /// <summary>
         /// Set the input neurons.
         /// </summary>
@@ -81,7 +80,6 @@ namespace Neural_Network_Library
         {
             set { _inputNeurons = value; }
         }
-
 
         /// <summary>
         /// Set the output neurons.

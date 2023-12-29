@@ -13,6 +13,19 @@ namespace Neural_Network_Library_tests
 
         private IActivationFunction _activationFunction = new ActivationBiPolar();
 
+        [TestMethod]
+        public void TestMethod_ActivationFunction()
+        {
+            int start = 1;
+            int size = 10;
+            double[] x = new double[10];
+            for (int i = 0; i < x.Length; i++)
+            {
+                x[i] = i;
+            }
+
+            this._activationFunction.ActivationFunction(x, start, size);
+        }
 
         [TestMethod]
         public void TestMethod_DerivativeFunction()
@@ -28,24 +41,17 @@ namespace Neural_Network_Library_tests
         [TestMethod]
         public void TestMethod_HasDerivative()
         {
-            
+
             var res = this._activationFunction.HasDerivative();
 
             Assert.AreEqual(true, res);
         }
 
         [TestMethod]
-        public void TestMethod_ActivationFunction()
+        public void Clone_Test()
         {
-            int start = 1;
-            int size = 10;
-            double[] x = new double[10];
-            for (int i = 0; i < x.Length; i++)
-            {
-                x[i] = i;
-            }    
-            
-            this._activationFunction.ActivationFunction(x, start, size);
+
+            this._activationFunction.Clone();
         }
 
     }

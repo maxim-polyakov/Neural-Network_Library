@@ -8,5 +8,6 @@ namespace Neural_Network_Library_tests
 {
     [TestClass]
     public class AnalyzeNetwork_Test {
+
     }
 }

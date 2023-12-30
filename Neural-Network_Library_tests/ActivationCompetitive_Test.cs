@@ -13,8 +13,7 @@ namespace Neural_Network_Library_tests
         private IActivationFunction _activationFunction = new ActivationCompetitive();
 
         [TestMethod]
-        public void TestMethod_ActivationFunction()
-        {
+        public void TestMethod_ActivationFunction() {
             int start = 1;
             int size = 10;
             double[] x = new double[10];
@@ -27,8 +26,7 @@ namespace Neural_Network_Library_tests
         }
 
         [TestMethod]
-        public void TestMethod_DerivativeFunction()
-        {
+        public void TestMethod_DerivativeFunction() {
             double a = 5.0;
             double b = 1.0;
 
@@ -37,14 +35,12 @@ namespace Neural_Network_Library_tests
         }
 
         [TestMethod]
-        public void TestMethod_HasDerivative()
-        {
-            Assert.AreEqual(true, this._activationFunction.HasDerivative(););
+        public void TestMethod_HasDerivative() {
+            Assert.AreEqual(true, this._activationFunction.HasDerivative());
         }
 
         [TestMethod]
-        public void Clone_Test()
-        {
+        public void Clone_Test() {
 
             this._activationFunction.Clone();
         }

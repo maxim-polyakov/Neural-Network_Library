@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Neural_Network_Library_tests
 {
     [TestClass]
-    public class BackPropFactory_Test
-    {
+    public class BackPropFactory_Test {
     }
 }

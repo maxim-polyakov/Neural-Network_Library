@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace Neural_Network_Library_tests
 {
     [TestClass]
-    public class BAMNetwork_Test
-    {
+    public class BAMNetwork_Test {
         //[TestMethod]
     }
 }

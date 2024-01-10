@@ -255,6 +255,7 @@
     <Compile Include="Classes\MLActivationFactory.cs" />
     <Compile Include="Classes\MLDataError.cs" />
     <Compile Include="Classes\MLDataFieldHolder.cs" />
+    <Compile Include="Classes\MLMethod.cs" />
     <Compile Include="Classes\MLMethodFactory.cs" />
     <Compile Include="Classes\MultiplicativeGroup.cs" />
     <Compile Include="Classes\MultiquadricFunction.cs" />

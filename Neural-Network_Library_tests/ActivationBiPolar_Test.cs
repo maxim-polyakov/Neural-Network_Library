@@ -16,7 +16,7 @@ namespace Neural_Network_Library_tests
         [TestMethod]
         public void TestMethod_ActivationFunction()
         {
-            int start = 1;
+            int start = 0;
             int size = 10;
             double[] x = new double[10];
             for (int i = 0; i < x.Length; i++)
